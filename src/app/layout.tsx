@@ -1,6 +1,7 @@
 import "@uploadthing/react/styles.css";
 import "~/styles/globals.css";
 
+
 import { ClerkProvider } from "@clerk/nextjs";
 
 import { GeistSans } from "geist/font/sans";
@@ -35,7 +36,7 @@ export default function RootLayout({
 
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
-        <body className={`font-sans ${GeistSans.variable}`}>
+        <body className={`font-sans ${GeistSans.variable} dark`}>
           <div className="grid h-screen grid-rows-[auto,1fr]">
             <TopNav />
             <main className="overflow-y-scroll">{children}</main>
