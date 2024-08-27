@@ -15,4 +15,4 @@
 - [x] Routing/image page(parallel route)
 - [x] Analytics (posthog)
 - [x] Delete button(w/ Server Actions)
-- [ ] Rate limiting (upstash)
+- [x] Rate limiting (upstash)
