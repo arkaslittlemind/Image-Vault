@@ -1,16 +1,16 @@
 import React from "react";
 
-import FullPageImageView from "~/components/full-image-page";
+import { FullPageImageView } from "~/common/full-page-image-view";
 
 export default function PhotoPage({
   params: { id: photoId },
 }: {
   params: { id: string };
 }) {
-  const idAsNumber = Number(photoId);
-  if (Number.isNaN(idAsNumber)) throw new Error("Invalid Photo ID");
-
+  
   return (
-      <FullPageImageView id={idAsNumber} />
+    <div className="flex h-full min-h-0 w-full min-w-0 overflow-y-hidden">
+      <FullPageImageView photoId={photoId} />
+    </div>
   );
 }
